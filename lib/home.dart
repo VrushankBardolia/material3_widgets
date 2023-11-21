@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:m3_widgets/buttons.dart';
+import 'package:m3_widgets/communication.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -21,6 +22,7 @@ class Home extends StatelessWidget {
         body: const TabBarView(
           children: [
             Buttons(),
+            Communication()
           ],
         )
       ),
