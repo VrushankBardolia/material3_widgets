@@ -10,7 +10,7 @@ class Communication extends StatelessWidget {
       child: SingleChildScrollView(
           child: Column(
             children: [
-              Text('Badge', style: Theme.of(context).textTheme.headlineLarge),
+              Text('Badge', style: Theme.of(context).textTheme.headlineMedium),
               const SizedBox(height: 12),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -23,7 +23,7 @@ class Communication extends StatelessWidget {
               const SizedBox(height: 12),
               const Divider(height: 1),
               const SizedBox(height: 20),
-              Text('Progress Indicator', style: Theme.of(context).textTheme.headlineLarge),
+              Text('Progress Indicator', style: Theme.of(context).textTheme.headlineMedium),
               const SizedBox(height: 12),
               const CircularProgressIndicator(),
               const SizedBox(height: 12),
@@ -31,7 +31,7 @@ class Communication extends StatelessWidget {
               const SizedBox(height: 12),
               const Divider(height: 1),
               const SizedBox(height: 20),
-              Text('Snackbar', style: Theme.of(context).textTheme.headlineLarge),
+              Text('Snackbar', style: Theme.of(context).textTheme.headlineMedium),
               FilledButton.tonalIcon(
                 label: const Text('Show Snackbar'),
                 icon: const Icon(Icons.message_outlined),

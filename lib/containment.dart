@@ -10,7 +10,7 @@ class Containment extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Text('Alerts', style: Theme.of(context).textTheme.headlineLarge),
+            Text('Alerts', style: Theme.of(context).textTheme.headlineMedium),
             FilledButton.tonal(
                 child: const Text('Alert Dialog'),
                 onPressed: () {
@@ -57,7 +57,7 @@ class Containment extends StatelessWidget {
             ),
             const Divider(height: 12),
             const SizedBox(height: 20),
-            Text('Bottom Sheet', style: Theme.of(context).textTheme.headlineLarge),
+            Text('Bottom Sheet', style: Theme.of(context).textTheme.headlineMedium),
             FilledButton.tonal(
               child: const Text('Show Modal Bottom Sheet'),
               onPressed: () {
@@ -110,7 +110,7 @@ class Containment extends StatelessWidget {
             ),
             const Divider(height: 12),
             const SizedBox(height: 20),
-            Text('Cards', style: Theme.of(context).textTheme.headlineLarge),
+            Text('Cards', style: Theme.of(context).textTheme.headlineMedium),
             const Card(child: SizedBox(
                     height: 100, child: Center(child: Text('Elevated Card')))
             ),
@@ -135,12 +135,12 @@ class Containment extends StatelessWidget {
                     height: 100, child: Center(child: Text('Outlined Card')))),
             const Divider(height: 12),
             const SizedBox(height: 20),
-            Text('Divider', style: Theme.of(context).textTheme.headlineLarge),
+            Text('Divider', style: Theme.of(context).textTheme.headlineMedium),
             const Divider(thickness: 4),
             const Divider(thickness: 8, color: Colors.blue),
             const SizedBox(height: 20),
             const Divider(height: 12),
-            Text('ListTile', style: Theme.of(context).textTheme.headlineLarge),
+            Text('ListTile', style: Theme.of(context).textTheme.headlineMedium),
             const Card(child: ListTile(title: Text('Title'))),
             const Card(
               child: ListTile(
