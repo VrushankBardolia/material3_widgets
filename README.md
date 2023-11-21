@@ -1,4 +1,4 @@
-#Flutter Material 3 Showcase App
+# Flutter Material 3 Showcase App
 
 This Flutter app serves as a comprehensive showcase of **Material 3** widgets, offering a glimpse into the future of UI design. Dive into a visually appealing and intuitive experience, exploring the latest advancements in Flutter and Material Design.
 
