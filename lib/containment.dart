@@ -28,40 +28,36 @@ class Containment extends StatelessWidget {
                                 child: const Text('Okay'))
                           ],
                         );
-                      });
-                }),
+                      }
+                  );
+                }
+            ),
             FilledButton.tonal(
                 child: const Text('Full Screen Alert'),
                 onPressed: () {
                   showGeneralDialog(
                       barrierColor: Theme.of(context).colorScheme.background,
-                      barrierLabel: MaterialLocalizations.of(context)
-                          .modalBarrierDismissLabel,
+                      barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
                       context: context,
-                      pageBuilder: (context, Animation animation,
-                          Animation secondaryAnimation) {
+                      pageBuilder: (context, Animation animation, Animation secondaryAnimation) {
                         return Column(children: [
-                          const SizedBox(
-                            height: 50,
-                          ),
+                          const SizedBox(height: 50,),
                           Row(
                             children: [
                               IconButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
+                                  onPressed: () {Navigator.of(context).pop();},
                                   icon: const Icon(Icons.arrow_back_rounded)),
-                              const Text('Full Screen Alert',
-                                  style: TextStyle(fontSize: 20))
+                              const Text('Full Screen Alert', style: TextStyle(fontSize: 20))
                             ],
                           )
                         ]);
-                      });
-                }),
+                      }
+                  );
+                }
+            ),
             const Divider(height: 12),
             const SizedBox(height: 20),
-            Text('Bottom Sheet',
-                style: Theme.of(context).textTheme.headlineLarge),
+            Text('Bottom Sheet', style: Theme.of(context).textTheme.headlineLarge),
             FilledButton.tonal(
               child: const Text('Show Modal Bottom Sheet'),
               onPressed: () {
@@ -77,13 +73,14 @@ class Containment extends StatelessWidget {
                               children: [
                                 const Text('Show Modal Bottom Sheet'),
                                 TextButton(
-                                    onPressed: () =>
-                                        Navigator.of(context).pop(),
+                                    onPressed: () => Navigator.of(context).pop(),
                                     child: const Text('Back'))
                               ],
                             ),
-                          ));
-                    });
+                          )
+                      );
+                    }
+                );
               },
             ),
             FilledButton.tonal(
@@ -105,45 +102,44 @@ class Containment extends StatelessWidget {
                                     child: const Text('Back'))
                               ],
                             ),
-                          ));
-                    });
+                          )
+                      );
+                    }
+                );
               },
             ),
             const Divider(height: 12),
             const SizedBox(height: 20),
             Text('Cards', style: Theme.of(context).textTheme.headlineLarge),
-            const Card(
-                child: SizedBox(
-                    height: 100, child: Center(child: Text('Elevated Card')))),
+            const Card(child: SizedBox(
+                    height: 100, child: Center(child: Text('Elevated Card')))
+            ),
             Card(
                 color: Theme.of(context).colorScheme.surfaceTint,
-                child: SizedBox(
-                    height: 100,
+                child: SizedBox(height: 100,
                     child: Center(
-                        child: Text(
-                      'Filled Card',
-                      style: TextStyle(
-                          color:
-                              Theme.of(context).colorScheme.onInverseSurface),
-                    )))),
+                      child: Text('Filled Card',
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onInverseSurface),
+                      )
+                    )
+                )
+            ),
             Card(
-                shape: RoundedRectangleBorder(
-                    side: BorderSide(
-                        color: Theme.of(context).colorScheme.outline),
-                    borderRadius: const BorderRadius.all(Radius.circular(12))),
-                child: const SizedBox(
+              shape: RoundedRectangleBorder(
+                side: BorderSide(
+                  color: Theme.of(context).colorScheme.outline),
+                borderRadius: const BorderRadius.all(Radius.circular(12))
+              ),
+              child: const SizedBox(
                     height: 100, child: Center(child: Text('Outlined Card')))),
             const Divider(height: 12),
             const SizedBox(height: 20),
             Text('Divider', style: Theme.of(context).textTheme.headlineLarge),
             const Divider(thickness: 4),
-            const Divider(
-              thickness: 8,
-              color: Colors.blue,
-            ),
+            const Divider(thickness: 8, color: Colors.blue),
             const SizedBox(height: 20),
             const Divider(height: 12),
-
             Text('ListTile', style: Theme.of(context).textTheme.headlineLarge),
             const Card(child: ListTile(title: Text('Title'))),
             const Card(
