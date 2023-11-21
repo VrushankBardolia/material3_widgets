@@ -10,7 +10,7 @@ class Buttons extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const Text('Text Buttons', style: TextStyle(fontSize: 20)),
+            Text('Text Buttons', style: Theme.of(context).textTheme.headlineLarge),
             Wrap(
               spacing: 8,
               alignment: WrapAlignment.center,
@@ -23,7 +23,7 @@ class Buttons extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            const Text('Icon + Text Buttons', style: TextStyle(fontSize: 20)),
+            Text('Icon + Text Buttons', style: Theme.of(context).textTheme.headlineLarge),
             Wrap(
               spacing: 8,
               alignment: WrapAlignment.center,
@@ -51,7 +51,7 @@ class Buttons extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            const Text('Disabled Buttons', style: TextStyle(fontSize: 20)),
+            Text('Disabled Buttons', style: Theme.of(context).textTheme.headlineLarge),
             const Wrap(
               spacing: 8,
               alignment: WrapAlignment.center,
@@ -65,8 +65,7 @@ class Buttons extends StatelessWidget {
             ),
             const Divider(height: 1),
             const SizedBox(height: 20),
-            const Text('Floating Action Buttons',
-                style: TextStyle(fontSize: 20)),
+            Text('Floating Action Buttons', style: Theme.of(context).textTheme.headlineLarge),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               FloatingActionButton.small(onPressed: () {}, child: const Icon(Icons.add)),
               FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
@@ -79,7 +78,7 @@ class Buttons extends StatelessWidget {
             const SizedBox(height: 20),
             const Divider(height: 1),
             const SizedBox(height: 20),
-            const Text('Icon Buttons', style: TextStyle(fontSize: 20)),
+            Text('Icon Buttons', style: Theme.of(context).textTheme.headlineLarge),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
               IconButton.filled(onPressed: () {}, icon: const Icon(Icons.settings)),
@@ -97,7 +96,7 @@ class Buttons extends StatelessWidget {
             const Divider(height: 1),
             const SizedBox(height: 20),
 
-            const Text('Segmented Buttons', style: TextStyle(fontSize: 20)),
+            Text('Segmented Buttons', style: Theme.of(context).textTheme.headlineLarge),
             const SingleChoice(),
             const SizedBox(height: 12),
             const MultipleChoice(),
