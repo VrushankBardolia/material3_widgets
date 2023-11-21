@@ -110,8 +110,12 @@ class Buttons extends StatelessWidget {
                 ]),
             const Divider(height: 1),
             const SizedBox(height: 20),
+
             const Text('Segmented Buttons', style: TextStyle(fontSize: 20)),
-            SingleChoice(),
+            const SingleChoice(),
+            const SizedBox(height: 12),
+            const MultipleChoice(),
+            const SizedBox(height: 20),
           ],
         ),
       ),
@@ -119,18 +123,17 @@ class Buttons extends StatelessWidget {
   }
 }
 
+// Single choice segmented buttons
 enum Calendar { week, month, year }
 
 class SingleChoice extends StatefulWidget {
   const SingleChoice({super.key});
-
   @override
   State<SingleChoice> createState() => _SingleChoiceState();
 }
 
 class _SingleChoiceState extends State<SingleChoice> {
   Calendar calendarView = Calendar.week;
-
   @override
   Widget build(BuildContext context) {
     return SegmentedButton<Calendar>(
@@ -154,6 +157,37 @@ class _SingleChoiceState extends State<SingleChoice> {
           calendarView = newSelection.first;
         });
       },
+    );
+  }
+}
+
+// Multi choice segmented buttons
+enum Sizes { small, medium, large, extraLarge }
+
+class MultipleChoice extends StatefulWidget {
+  const MultipleChoice({super.key});
+  @override
+  State<MultipleChoice> createState() => _MultipleChoiceState();
+}
+
+class _MultipleChoiceState extends State<MultipleChoice> {
+  Set<Sizes> selection = <Sizes>{Sizes.large, Sizes.extraLarge};
+  @override
+  Widget build(BuildContext context) {
+    return SegmentedButton<Sizes>(
+      segments: const <ButtonSegment<Sizes>>[
+        ButtonSegment<Sizes>(value: Sizes.small, label: Text('S')),
+        ButtonSegment<Sizes>(value: Sizes.medium, label: Text('M')),
+        ButtonSegment<Sizes>(value: Sizes.large, label: Text('L')),
+        ButtonSegment<Sizes>(value: Sizes.extraLarge, label: Text('XL')),
+      ],
+      selected: selection,
+      onSelectionChanged: (Set<Sizes> newSelection) {
+        setState(() {
+          selection = newSelection;
+        });
+      },
+      multiSelectionEnabled: true,
     );
   }
 }
