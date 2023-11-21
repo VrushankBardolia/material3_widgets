@@ -10,96 +10,170 @@ class Buttons extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
+
+            // ======================================
             Text('Text Buttons', style: Theme.of(context).textTheme.headlineMedium),
             Wrap(
               spacing: 8,
               alignment: WrapAlignment.center,
               children: [
+                // Elevated button
                 ElevatedButton(onPressed: () {}, child: const Text('Elevated Button')),
+
+                // Filled button
                 FilledButton(onPressed: () {}, child: const Text('Filled Button')),
+
+                // Tonal button
                 FilledButton.tonal(onPressed: () {}, child: const Text('Tonal Button')),
+
+                // Outlined button
                 OutlinedButton(onPressed: () {}, child: const Text('Outlined Button')),
+
+                // Text button
                 TextButton(onPressed: () {}, child: const Text('Text Button')),
               ],
             ),
+
             const SizedBox(height: 20),
+
+            // ======================================
             Text('Icon + Text Buttons', style: Theme.of(context).textTheme.headlineMedium),
             Wrap(
               spacing: 8,
               alignment: WrapAlignment.center,
               children: [
+
+                // Icon elevated button
                 ElevatedButton.icon(
                     onPressed: () {},
                     label: const Text('Elevated Button'),
                     icon: const Icon(Icons.radio_button_checked)),
+
+                // Icon filled button
                 FilledButton.icon(
                     onPressed: () {},
                     label: const Text('Filled Button'),
                     icon: const Icon(Icons.radio_button_checked)),
+
+                // Icon tonal button
                 FilledButton.tonalIcon(
                     onPressed: () {},
                     label: const Text('Filled Button'),
                     icon: const Icon(Icons.radio_button_checked)),
+
+                // Icon outlined button
                 OutlinedButton.icon(
                     onPressed: () {},
                     label: const Text('Outlined Button'),
                     icon: const Icon(Icons.radio_button_checked)),
+
+                // Icon text button
                 TextButton.icon(
                     onPressed: () {},
                     label: const Text('Text Button'),
                     icon: const Icon(Icons.radio_button_checked)),
               ],
             ),
+
             const SizedBox(height: 20),
+
+            // ======================================
             Text('Disabled Buttons', style: Theme.of(context).textTheme.headlineMedium),
             const Wrap(
               spacing: 8,
               alignment: WrapAlignment.center,
               children: [
+
+                // Disabled elevated button
                 ElevatedButton(onPressed: null, child: Text('Elevated Button')),
+
+                // Disabled filled button
                 FilledButton(onPressed: null, child: Text('Filled Button')),
+
+                // Disabled tonal button
                 FilledButton.tonal(onPressed: null, child: Text('Tonal Button')),
+
+                // Disabled outlined button
                 OutlinedButton(onPressed: null, child: Text('Outlined Button')),
+
+                // Disabled text button
                 TextButton(onPressed: null, child: Text('Text Button')),
               ],
             ),
-            const Divider(height: 1),
+
+            const Divider(height: 12),
             const SizedBox(height: 20),
+
+            // ======================================
             Text('Floating Action Buttons', style: Theme.of(context).textTheme.headlineMedium),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+
+              // Small floating action button
               FloatingActionButton.small(onPressed: () {}, child: const Icon(Icons.add)),
+
+              // Floating action button
               FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
+
+              // Large floating action button
               FloatingActionButton.large(onPressed: () {}, child: const Icon(Icons.add)),
+
+              // Extended floating action button
               FloatingActionButton.extended(
                   onPressed: () {},
                   label: const Text('Extended'),
                   icon: const Icon(Icons.add)),
             ]),
+
+            const Divider(height: 12),
             const SizedBox(height: 20),
-            const Divider(height: 1),
-            const SizedBox(height: 20),
+
+            // ======================================
             Text('Icon Buttons', style: Theme.of(context).textTheme.headlineMedium),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+
+              // Icon button
               IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
+
+              // Filled icon button
               IconButton.filled(onPressed: () {}, icon: const Icon(Icons.settings)),
+
+              // Tonal icon button
               IconButton.filledTonal(onPressed: () {}, icon: const Icon(Icons.settings)),
+
+              // Outlined icon button
               IconButton.outlined(onPressed: () {}, icon: const Icon(Icons.settings)),
             ]),
             const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  IconButton(onPressed: null, icon: Icon(Icons.settings)),
-                  IconButton.filled(onPressed: null, icon: Icon(Icons.settings)),
-                  IconButton.filledTonal(onPressed: null, icon: Icon(Icons.settings)),
-                  IconButton.outlined(onPressed: null, icon: Icon(Icons.settings)),
-                ]),
-            const Divider(height: 1),
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+                // Disabled icon button
+                IconButton(onPressed: null, icon: Icon(Icons.settings)),
+
+                // Disabled filled button
+                IconButton.filled(onPressed: null, icon: Icon(Icons.settings)),
+
+                // Disabled tonal button
+                IconButton.filledTonal(onPressed: null, icon: Icon(Icons.settings)),
+
+                // Disabled outlined button
+                IconButton.outlined(onPressed: null, icon: Icon(Icons.settings)),
+              ]
+            ),
+
+            const Divider(height: 12),
             const SizedBox(height: 20),
 
+            // ======================================
             Text('Segmented Buttons', style: Theme.of(context).textTheme.headlineMedium),
+
+            // Single choice segmented buttons
             const SingleChoice(),
             const SizedBox(height: 12),
+
+            // Multi choice segmented buttons
             const MultipleChoice(),
+
             const SizedBox(height: 20),
           ],
         ),
