@@ -15,14 +15,10 @@ class Buttons extends StatelessWidget {
               spacing: 8,
               alignment: WrapAlignment.center,
               children: [
-                ElevatedButton(
-                    onPressed: () {}, child: const Text('Elevated Button')),
-                FilledButton(
-                    onPressed: () {}, child: const Text('Filled Button')),
-                FilledButton.tonal(
-                    onPressed: () {}, child: const Text('Tonal Button')),
-                OutlinedButton(
-                    onPressed: () {}, child: const Text('Outlined Button')),
+                ElevatedButton(onPressed: () {}, child: const Text('Elevated Button')),
+                FilledButton(onPressed: () {}, child: const Text('Filled Button')),
+                FilledButton.tonal(onPressed: () {}, child: const Text('Tonal Button')),
+                OutlinedButton(onPressed: () {}, child: const Text('Outlined Button')),
                 TextButton(onPressed: () {}, child: const Text('Text Button')),
               ],
             ),
@@ -62,8 +58,7 @@ class Buttons extends StatelessWidget {
               children: [
                 ElevatedButton(onPressed: null, child: Text('Elevated Button')),
                 FilledButton(onPressed: null, child: Text('Filled Button')),
-                FilledButton.tonal(
-                    onPressed: null, child: Text('Tonal Button')),
+                FilledButton.tonal(onPressed: null, child: Text('Tonal Button')),
                 OutlinedButton(onPressed: null, child: Text('Outlined Button')),
                 TextButton(onPressed: null, child: Text('Text Button')),
               ],
@@ -73,12 +68,9 @@ class Buttons extends StatelessWidget {
             const Text('Floating Action Buttons',
                 style: TextStyle(fontSize: 20)),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-              FloatingActionButton.small(
-                  onPressed: () {}, child: const Icon(Icons.add)),
-              FloatingActionButton(
-                  onPressed: () {}, child: const Icon(Icons.add)),
-              FloatingActionButton.large(
-                  onPressed: () {}, child: const Icon(Icons.add)),
+              FloatingActionButton.small(onPressed: () {}, child: const Icon(Icons.add)),
+              FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
+              FloatingActionButton.large(onPressed: () {}, child: const Icon(Icons.add)),
               FloatingActionButton.extended(
                   onPressed: () {},
                   label: const Text('Extended'),
@@ -90,23 +82,17 @@ class Buttons extends StatelessWidget {
             const Text('Icon Buttons', style: TextStyle(fontSize: 20)),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
-              IconButton.filled(
-                  onPressed: () {}, icon: const Icon(Icons.settings)),
-              IconButton.filledTonal(
-                  onPressed: () {}, icon: const Icon(Icons.settings)),
-              IconButton.outlined(
-                  onPressed: () {}, icon: const Icon(Icons.settings)),
+              IconButton.filled(onPressed: () {}, icon: const Icon(Icons.settings)),
+              IconButton.filledTonal(onPressed: () {}, icon: const Icon(Icons.settings)),
+              IconButton.outlined(onPressed: () {}, icon: const Icon(Icons.settings)),
             ]),
             const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(onPressed: null, icon: Icon(Icons.settings)),
-                  IconButton.filled(
-                      onPressed: null, icon: Icon(Icons.settings)),
-                  IconButton.filledTonal(
-                      onPressed: null, icon: Icon(Icons.settings)),
-                  IconButton.outlined(
-                      onPressed: null, icon: Icon(Icons.settings)),
+                  IconButton.filled(onPressed: null, icon: Icon(Icons.settings)),
+                  IconButton.filledTonal(onPressed: null, icon: Icon(Icons.settings)),
+                  IconButton.outlined(onPressed: null, icon: Icon(Icons.settings)),
                 ]),
             const Divider(height: 1),
             const SizedBox(height: 20),
