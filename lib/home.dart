@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:m3_widgets/buttons.dart';
 import 'package:m3_widgets/communication.dart';
 import 'package:m3_widgets/containment.dart';
+import 'package:m3_widgets/navigation.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -9,7 +10,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -20,6 +21,7 @@ class Home extends StatelessWidget {
                 Tab(text:'Buttons'),
                 Tab(text:'Communication'),
                 Tab(text:'Containment'),
+                Tab(text:'Navigation'),
               ]
           ),
         ),
@@ -27,7 +29,8 @@ class Home extends StatelessWidget {
           children: [
             Buttons(),
             Communication(),
-            Containment()
+            Containment(),
+            Navigation()
           ],
         )
       ),
