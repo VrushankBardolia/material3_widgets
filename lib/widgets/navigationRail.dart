@@ -65,6 +65,7 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
             // Settings
             Column(
               children: [
+                // =========================================
                 Text('Label Type',style: Theme.of(context).textTheme.titleMedium),
                 Text(labelType.name),
                 SizedBox(
@@ -106,13 +107,15 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                       }
                   ),
                 ),
-                SizedBox(width: 250, child: Divider(thickness: 1)),
+                const SizedBox(width: 250, child: Divider(thickness: 1)),
+
+                // =========================================
                 Text('Group Alignment',style: Theme.of(context).textTheme.titleMedium),
                 Text('$groupAlignment'),
                 SizedBox(
                   width: 250,
                   child: RadioListTile(
-                    title: Text('Top'),
+                    title: const Text('Top'),
                       value: -1.0,
                       groupValue: groupAlignment,
                       onChanged: (value){
@@ -148,11 +151,13 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                       }
                   ),
                 ),
-                SizedBox(width: 250, child: Divider(thickness: 1)),
+                const SizedBox(width: 250, child: Divider(thickness: 1)),
+
+                // =========================================
                 SizedBox(
                   width: 250,
                   child: SwitchListTile(
-                    title: Text('Show Leading'),
+                    title: const Text('Show Leading'),
                       value: showLeading,
                       onChanged: (bool value){
                         setState(() {
@@ -164,7 +169,7 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                 SizedBox(
                   width: 250,
                   child: SwitchListTile(
-                    title: Text('Show Trailing'),
+                    title: const Text('Show Trailing'),
                       value: showTrailing,
                       onChanged: (bool value){
                         setState(() {
@@ -173,24 +178,6 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                       }
                   ),
                 )
-                // FilledButton.tonal(
-                //   onPressed: () {
-                //     setState(() {
-                //       showLeading = !showLeading;
-                //     });
-                //   },
-                //   child:
-                //   Text(showLeading ? 'Hide Leading' : 'Show Leading'),
-                // ),
-                // FilledButton.tonal(
-                //   onPressed: () {
-                //     setState(() {
-                //       showTrailing = !showTrailing;
-                //     });
-                //   },
-                //   child:
-                //   Text(showTrailing ? 'Hide Leading' : 'Show Leading'),
-                // )
               ],
             )
           ],
