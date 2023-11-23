@@ -16,6 +16,8 @@ class _NavigationDemoState extends State<NavigationDemo> {
       appBar: AppBar(
         title: const Text('NavigationBar Demo'),
       ),
+
+      // Bottom navigation bar
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {
           setState(() {
@@ -25,18 +27,26 @@ class _NavigationDemoState extends State<NavigationDemo> {
         indicatorColor: Theme.of(context).colorScheme.primaryContainer,
         selectedIndex: currentPageIndex,
         destinations: const [
+
+          // Navigation item
           NavigationDestination(
               icon: Icon(Icons.home),
               label: 'Home'
           ),
+
+          // Navigation item
           NavigationDestination(
               icon: Icon(Icons.search),
               label: 'Search'
           ),
+
+          // Navigation item
           NavigationDestination(
               icon: Badge(child: Icon(Icons.notifications)),
               label: 'Notification'
           ),
+
+          // Navigation item
           NavigationDestination(
               icon: Icon(Icons.person),
               label: 'Profile'
@@ -44,6 +54,8 @@ class _NavigationDemoState extends State<NavigationDemo> {
         ],
       ),
       body: <Widget>[
+
+        // 1st navigation screen
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
@@ -53,6 +65,8 @@ class _NavigationDemoState extends State<NavigationDemo> {
             ),
           ),
         ),
+
+        // 2nd navigation screen
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
@@ -62,6 +76,8 @@ class _NavigationDemoState extends State<NavigationDemo> {
             ),
           ),
         ),
+
+        // 3rd navigation screen
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
@@ -71,6 +87,8 @@ class _NavigationDemoState extends State<NavigationDemo> {
             ),
           ),
         ),
+
+        // 4th navigation screen
         Card(
           shadowColor: Colors.transparent,
           margin: const EdgeInsets.all(8.0),
@@ -80,7 +98,7 @@ class _NavigationDemoState extends State<NavigationDemo> {
             ),
           ),
         ),
-      ][currentPageIndex],
+      ][currentPageIndex], // Mandatory line to add
     );
   }
 }

@@ -27,6 +27,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Check Box', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Default check box left to right
             CheckboxListTile(
               title: const Text('Default Checkbox'),
               controlAffinity: ListTileControlAffinity.leading,
@@ -39,6 +40,7 @@ class _SelectionState extends State<Selection> {
               },
             ),
 
+            // Error check box right to left
             CheckboxListTile(
               title: const Text('Error Checkbox'),
               isError: true,
@@ -51,6 +53,7 @@ class _SelectionState extends State<Selection> {
               },
             ),
 
+            // Disabled check box left to right
             CheckboxListTile(
               controlAffinity: ListTileControlAffinity.leading,
               title: const Text('Disabled Checkbox'),
@@ -66,6 +69,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Radio Button', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Default radio button left to right
             RadioListTile(
               title: const Text('Blue'),
               value: Colors.blue,
@@ -76,6 +80,8 @@ class _SelectionState extends State<Selection> {
                 });
               },
             ),
+
+            // Right to left
             RadioListTile(
               title: const Text('Red'),
               controlAffinity: ListTileControlAffinity.trailing,
@@ -87,15 +93,13 @@ class _SelectionState extends State<Selection> {
                 });
               },
             ),
+
+            // Disabled radio button
             RadioListTile(
               title: const Text('Yellow'),
               value: Colors.yellow,
               groupValue: _colors,
-              onChanged: (Colors? value) {
-                setState(() {
-                  _colors = value;
-                });
-              },
+              onChanged: null
             ),
 
             const Divider(height: 12),
@@ -104,6 +108,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Switch', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Switch right to left
             SwitchListTile(
               title: const Text('Lights'),
               value: _lights!,
@@ -113,6 +118,8 @@ class _SelectionState extends State<Selection> {
                 });
               },
             ),
+
+            // Switch left to right
             SwitchListTile(
               title: const Text('Lights'),
               controlAffinity: ListTileControlAffinity.leading,
@@ -130,6 +137,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Date Picker', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Date picker
             FilledButton.tonal(
               child: const Text('Show Date Picker'),
               onPressed: (){
@@ -148,6 +156,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Time Picker', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Time picker
             FilledButton.tonal(
               child: const Text('Show Time Picker'),
               onPressed: (){
@@ -164,21 +173,23 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Chip', style: Theme.of(context).textTheme.headlineMedium),
 
-             Wrap(
-               spacing: 8,
-               alignment: WrapAlignment.center,
-               children: [
-                Chip(label: Text('Default')),
+            Wrap(
+              spacing: 8,
+              alignment: WrapAlignment.center,
+              children: [
+
+                // Default chip
+                const Chip(label: Text('Default')),
+
+                // Pill shaped chip
                 Chip(
-                    label: Text('Border Radius'),
+                  label: const Text('Border Radius'),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50)
+                    borderRadius: BorderRadius.circular(50)
                   ),
                 ),
-                Chip(
-                    label: Text('Deletable'),
-                  deleteIcon: IconButton(onPressed: () {}, icon: Icon(Icons.delete),),
-                ),
+
+                // Action chip
                 ActionChip(
                   avatar: Icon(favorite ? Icons.favorite : Icons.favorite_border),
                   label: const Text('Save to favorites'),
@@ -197,6 +208,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Popup Menu', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Popup menu
             PopupMenuButton(
               position: PopupMenuPosition.over,
               initialValue: _colors,
@@ -227,6 +239,7 @@ class _SelectionState extends State<Selection> {
             // ======================================
             Text('Slider', style: Theme.of(context).textTheme.headlineMedium),
 
+            // Slider
             Slider(
               value: _currentSliderValue,
               max: 100,

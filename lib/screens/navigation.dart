@@ -21,6 +21,7 @@ class Navigation extends StatelessWidget {
               // ======================================
               Text('Appbar', style: Theme.of(context).textTheme.headlineMedium),
 
+              // Appbar
               FilledButton.tonal(
                 child: const Text('Appbar Demo'),
                 onPressed: (){
@@ -34,8 +35,9 @@ class Navigation extends StatelessWidget {
               // ======================================
               Text('Bottom Bar', style: Theme.of(context).textTheme.headlineMedium),
 
+              // Bottom app bar
               FilledButton.tonal(
-                child: const Text('Bottom Bar Demo'),
+                child: const Text('Bottom Appbar Demo'),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const BottomBarDemo()));
                 },

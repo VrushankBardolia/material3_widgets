@@ -12,14 +12,20 @@ class TabbarDemo extends StatelessWidget {
             title: const Text('Tabbar Demo'),
             bottom: const TabBar(
                 tabs: [
+
+                  // 1st tab
                   Tab(
                     child: Text('Car'),
                     icon: Icon(Icons.directions_car_filled_rounded),
                   ),
+
+                  // 2nd tab
                   Tab(
                     child: Text('Train'),
                     icon: Icon(Icons.train_outlined),
                   ),
+
+                  // 3rd tab
                   Tab(
                     child: Text('Flight'),
                     icon: Icon(Icons.flight_rounded),
@@ -29,6 +35,8 @@ class TabbarDemo extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
+
+              // 1st tab view
               Card(
                 shadowColor: Colors.transparent,
                 margin: const EdgeInsets.all(8.0),
@@ -42,6 +50,8 @@ class TabbarDemo extends StatelessWidget {
                   )
                 ),
               ),
+
+              // 2nd tab view
               Card(
                 shadowColor: Colors.transparent,
                 margin: const EdgeInsets.all(8.0),
@@ -55,6 +65,8 @@ class TabbarDemo extends StatelessWidget {
                   )
                 ),
               ),
+
+              // 3rd tab view
               Card(
                 shadowColor: Colors.transparent,
                 margin: const EdgeInsets.all(8.0),

@@ -78,6 +78,8 @@ class Buttons extends StatelessWidget {
             const SizedBox(height: 20),
 
             // ======================================
+            // To disable the button, put 'null' on 'onPressed' method of any button
+
             Text('Disabled Buttons', style: Theme.of(context).textTheme.headlineMedium),
             const Wrap(
               spacing: 8,

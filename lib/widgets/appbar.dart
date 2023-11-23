@@ -15,6 +15,8 @@ class _AppbarDemoState extends State<AppbarDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      // Appbar
       appBar: AppBar(
         title: const Text('Title'),
         centerTitle: centerTitle,
@@ -24,6 +26,8 @@ class _AppbarDemoState extends State<AppbarDemo> {
         ] : null,
         elevation: elevate,
       ),
+
+      // Body
       body: Center(
         child: Column(
           children: [

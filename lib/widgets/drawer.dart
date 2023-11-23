@@ -9,6 +9,8 @@ class DrawerDemo extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Navigation Drawer Demo'),
       ),
+
+      // Drawer
       drawer: const Drawer(
         child: Column(
           children: [

@@ -42,19 +42,19 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
               trailing: showTrailing ? const Icon(Icons.more_horiz) : null,
               destinations: const [
                 NavigationRailDestination(
-                    icon: Icon(Icons.home_outlined),
-                    selectedIcon: Icon(Icons.home),
-                    label: Text('Home')
+                  icon: Icon(Icons.home_outlined),
+                  selectedIcon: Icon(Icons.home),
+                  label: Text('Home')
                 ),
                 NavigationRailDestination(
-                    icon: Icon(Icons.favorite_border_outlined),
-                    selectedIcon: Icon(Icons.favorite),
-                    label: Text('Favourite')
+                  icon: Icon(Icons.favorite_border_outlined),
+                  selectedIcon: Icon(Icons.favorite),
+                  label: Text('Favourite')
                 ),
                 NavigationRailDestination(
-                    icon:Icon(Icons.star_border),
-                    selectedIcon: Icon(Icons.star),
-                    label: Text('Notification')
+                  icon:Icon(Icons.star_border),
+                  selectedIcon: Icon(Icons.star),
+                  label: Text('Notification')
                 ),
               ],
             ),
@@ -71,40 +71,40 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                 SizedBox(
                   width: 250,
                   child: RadioListTile(
-                      title: const Text('None'),
-                      value: NavigationRailLabelType.none,
-                      groupValue: labelType,
-                      onChanged: (value){
-                        setState(() {
-                          labelType = value!;
-                        });
-                      }
+                    title: const Text('None'),
+                    value: NavigationRailLabelType.none,
+                    groupValue: labelType,
+                    onChanged: (value){
+                      setState(() {
+                        labelType = value!;
+                      });
+                    }
                   ),
                 ),
                 SizedBox(
                   width: 250,
                   child: RadioListTile(
-                      title: const Text('Selected'),
-                      value: NavigationRailLabelType.selected,
-                      groupValue: labelType,
-                      onChanged: (value){
-                        setState(() {
-                          labelType = value!;
-                        });
-                      }
+                    title: const Text('Selected'),
+                    value: NavigationRailLabelType.selected,
+                    groupValue: labelType,
+                    onChanged: (value){
+                      setState(() {
+                        labelType = value!;
+                      });
+                    }
                   ),
                 ),
                 SizedBox(
                   width: 250,
                   child: RadioListTile(
-                      title: const Text('All'),
-                      value: NavigationRailLabelType.all,
-                      groupValue: labelType,
-                      onChanged: (value){
-                        setState(() {
-                          labelType = value!;
-                        });
-                      }
+                    title: const Text('All'),
+                    value: NavigationRailLabelType.all,
+                    groupValue: labelType,
+                    onChanged: (value){
+                      setState(() {
+                        labelType = value!;
+                      });
+                    }
                   ),
                 ),
                 const SizedBox(width: 250, child: Divider(thickness: 1)),
@@ -116,39 +116,39 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                   width: 250,
                   child: RadioListTile(
                     title: const Text('Top'),
-                      value: -1.0,
-                      groupValue: groupAlignment,
-                      onChanged: (value){
-                        setState(() {
-                          groupAlignment = value!;
-                        });
-                      }
+                    value: -1.0,
+                    groupValue: groupAlignment,
+                    onChanged: (value){
+                      setState(() {
+                        groupAlignment = value!;
+                      });
+                    }
                   ),
                 ),
                 SizedBox(
                   width: 250,
                   child: RadioListTile(
                     title: const Text('Middle'),
-                      value: 0.0,
-                      groupValue: groupAlignment,
-                      onChanged: (value){
-                        setState(() {
-                          groupAlignment = value!;
-                        });
-                      }
+                    value: 0.0,
+                    groupValue: groupAlignment,
+                    onChanged: (value){
+                      setState(() {
+                        groupAlignment = value!;
+                      });
+                    }
                   ),
                 ),
                 SizedBox(
                   width: 250,
                   child: RadioListTile(
                     title: const Text('Bottom'),
-                      value: 1.0,
-                      groupValue: groupAlignment,
-                      onChanged: (value){
-                        setState(() {
-                          groupAlignment = value!;
-                        });
-                      }
+                    value: 1.0,
+                    groupValue: groupAlignment,
+                    onChanged: (value){
+                      setState(() {
+                        groupAlignment = value!;
+                      });
+                    }
                   ),
                 ),
                 const SizedBox(width: 250, child: Divider(thickness: 1)),
@@ -158,24 +158,24 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
                   width: 250,
                   child: SwitchListTile(
                     title: const Text('Show Leading'),
-                      value: showLeading,
-                      onChanged: (bool value){
-                        setState(() {
-                          showLeading = value;
-                        });
-                      }
+                    value: showLeading,
+                    onChanged: (bool value){
+                      setState(() {
+                        showLeading = value;
+                      });
+                    }
                   ),
                 ),
                 SizedBox(
                   width: 250,
                   child: SwitchListTile(
                     title: const Text('Show Trailing'),
-                      value: showTrailing,
-                      onChanged: (bool value){
-                        setState(() {
-                          showTrailing = value;
-                        });
-                      }
+                    value: showTrailing,
+                    onChanged: (bool value){
+                      setState(() {
+                        showTrailing = value;
+                      });
+                    }
                   ),
                 )
               ],

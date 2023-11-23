@@ -28,22 +28,32 @@ class _BottomBarDemoState extends State<BottomBarDemo> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
+
+            // Bottom bar icons
             IconButton(onPressed: (){},icon: const Icon(Icons.favorite)),
             if(centerLocations.contains(FABLocation))const Spacer(),
             IconButton(onPressed: (){},icon: const Icon(Icons.share)),
           ],
         ),
       ),
+
+      // Floating action button
       floatingActionButton: fab
           ? FloatingActionButton(
               onPressed: (){},
               child: const Icon(Icons.add),
             ) 
           : null,
+
+      // Floating action button location
       floatingActionButtonLocation:FABLocation,
+
+      // Appbar
       appBar: AppBar(
-        title: const Text('Bottom app bar demo'),
+        title: const Text('Bottom Appbar Demo'),
       ),
+
+      // body
       body: Column(
         children: [
           SwitchListTile(
