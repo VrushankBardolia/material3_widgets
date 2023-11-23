@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:m3_widgets/widgets/appbar.dart';
-import 'package:m3_widgets/widgets/tabbar.dart';
+
+import '../widgets/appbar.dart';
+import '../widgets/bottombar.dart';
+import '../widgets/tabbar.dart';
 import '../widgets/drawer.dart';
 import '../widgets/navigationRail.dart';
 import '../widgets/navigationbar.dart';
@@ -32,17 +34,11 @@ class Navigation extends StatelessWidget {
               // ======================================
               Text('Bottom Bar', style: Theme.of(context).textTheme.headlineMedium),
 
-              BottomAppBar(
-                child: IconTheme(
-                  data: Theme.of(context).iconTheme,
-                  child: Row(
-                    children: [
-                      IconButton(onPressed: (){}, icon: const Icon(Icons.graphic_eq)),
-                      IconButton(onPressed: (){}, icon: const Icon(Icons.link_rounded)),
-                      IconButton(onPressed: (){}, icon: const Icon(Icons.copy)),
-                    ],
-                  ),
-                ),
+              FilledButton.tonal(
+                child: const Text('Bottom Bar Demo'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const BottomBarDemo()));
+                },
               ),
 
               const Divider(height: 12),
@@ -83,7 +79,6 @@ class Navigation extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationRailDemo()));
                 },
               ),
-
 
               const Divider(height: 12),
               const SizedBox(height: 20),

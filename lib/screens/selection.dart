@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 enum Colors { blue, red , yellow }
 
 class Selection extends StatefulWidget {

@@ -10,6 +10,7 @@ class AppbarDemo extends StatefulWidget {
 class _AppbarDemoState extends State<AppbarDemo> {
   bool centerTitle = false;
   bool action = false;
+  double elevate=0;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +22,7 @@ class _AppbarDemoState extends State<AppbarDemo> {
           IconButton(onPressed: (){}, icon: Icon(Icons. notifications)),
           IconButton(onPressed: (){}, icon: Icon(Icons.person)),
         ] : null,
+        elevation: elevate,
       ),
       body: Center(
         child: Column(
@@ -42,6 +44,18 @@ class _AppbarDemoState extends State<AppbarDemo> {
                     action = value;
                   });
                 }
+            ),
+            Text('Elevation',style: Theme.of(context).textTheme.bodyLarge),
+            Slider(
+              value: elevate,
+              max: 10,
+              divisions: 10,
+              label: elevate.round().toString(),
+              onChanged: (double value) {
+                setState(() {
+                  elevate = value;
+                });
+              },
             ),
           ],
         ),
