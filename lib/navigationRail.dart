@@ -18,6 +18,8 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
       ),
       body: Row(
         children: [
+
+          // Main Component (Navigation Rail)
           NavigationRail(
             selectedIndex: _selectedIndex,
             labelType: NavigationRailLabelType.selected,
@@ -50,6 +52,12 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
               ),
             ],
           ),
+
+          // Vertical Divider
+          const VerticalDivider(),
+
+          // Settings
+          const Column()
         ],
       ),
     );
