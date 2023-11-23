@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:m3_widgets/drawer.dart';
-import 'package:m3_widgets/navigationRail.dart';
-import 'package:m3_widgets/navigationbar.dart';
+import '../widgets/drawer.dart';
+import '../widgets/navigationRail.dart';
+import '../widgets/navigationbar.dart';
 
 class Navigation extends StatelessWidget {
   const Navigation({super.key});

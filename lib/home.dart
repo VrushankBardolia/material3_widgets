@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:m3_widgets/buttons.dart';
-import 'package:m3_widgets/communication.dart';
-import 'package:m3_widgets/containment.dart';
-import 'package:m3_widgets/navigation.dart';
+import '../screens/buttons.dart';
+import '../screens/communication.dart';
+import '../screens/containment.dart';
+import '../screens/navigation.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
