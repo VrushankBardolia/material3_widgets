@@ -57,7 +57,9 @@ class _NavigationRailDemoState extends State<NavigationRailDemo> {
           const VerticalDivider(),
 
           // Settings
-          const Column()
+          Column(
+
+          )
         ],
       ),
     );

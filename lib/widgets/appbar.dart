@@ -16,11 +16,11 @@ class _AppbarDemoState extends State<AppbarDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Title'),
+        title: const Text('Title'),
         centerTitle: centerTitle,
         actions: action? [
-          IconButton(onPressed: (){}, icon: Icon(Icons. notifications)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.person)),
+          IconButton(onPressed: (){}, icon: const Icon(Icons. notifications)),
+          IconButton(onPressed: (){}, icon: const Icon(Icons.person)),
         ] : null,
         elevation: elevate,
       ),
@@ -28,7 +28,7 @@ class _AppbarDemoState extends State<AppbarDemo> {
         child: Column(
           children: [
             SwitchListTile(
-                title: Text('Make Title Center'),
+                title: const Text('Make Title Center'),
                 value: centerTitle,
                 onChanged: (bool value){
                   setState(() {
@@ -37,7 +37,7 @@ class _AppbarDemoState extends State<AppbarDemo> {
                 }
             ),
             SwitchListTile(
-                title: Text('Action Icon Buttons'),
+                title: const Text('Action Icon Buttons'),
                 value: action,
                 onChanged: (bool value){
                   setState(() {
