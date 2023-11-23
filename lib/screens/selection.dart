@@ -19,6 +19,6 @@ class _SelectionState extends State<Selection> {
           ],
         ),
       ),
-    )
+    );
   }
 }
