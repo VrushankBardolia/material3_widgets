@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:m3_widgets/screens/selection.dart';
-import 'package:m3_widgets/screens/textInput.dart';
+
+import '../screens/selection.dart';
+import '../screens/textInput.dart';
 import '../screens/buttons.dart';
 import '../screens/communication.dart';
 import '../screens/containment.dart';
