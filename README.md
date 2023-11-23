@@ -28,6 +28,27 @@ This Flutter app serves as a comprehensive showcase of **Material 3** widgets, o
   - Cards
   - Divider
   - ListTile
+  
+- Navigation (With Separate Screen)
+  - Appbar
+  - Bottom App Bar
+  - Navigation Bar
+  - Navigation Drawer
+  - Navigation Rail
+  - Tab Bar
+  
+- Selection
+  - Checkbox
+  - Radio Button
+  - Switch
+  - Date Picker
+  - Time Picker
+  - Chip
+  - Popup Menu
+  - Slider
+ 
+- Text Input
+  - TextField
 
 ---
 ## Getting Started
