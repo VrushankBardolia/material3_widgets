@@ -58,7 +58,7 @@ class Buttons extends StatelessWidget {
                 // Icon tonal button
                 FilledButton.tonalIcon(
                     onPressed: () {},
-                    label: const Text('Filled Button'),
+                    label: const Text('Tonal Button'),
                     icon: const Icon(Icons.radio_button_checked)),
 
                 // Icon outlined button
