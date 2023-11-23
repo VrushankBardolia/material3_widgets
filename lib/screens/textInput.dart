@@ -19,25 +19,25 @@ class _TextInputState extends State<TextInput> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 4),
+            const SizedBox(height: 4),
             TextField(
               decoration: InputDecoration(
-                prefixIcon: prefix ? Icon(Icons.search) : null,
-                suffixIcon: suffix ? Icon(Icons.clear) : null,
+                prefixIcon: prefix ? const Icon(Icons.search) : null,
+                suffixIcon: suffix ? const Icon(Icons.clear) : null,
                 labelText: label ? 'Label Text' : null,
                 hintText: hint ? 'Hint Text' : null,
                 helperText: helper ? 'Helper Text' : null,
                 filled: fill,
-                border: outlined ? OutlineInputBorder() : null
+                border: outlined ? const OutlineInputBorder() : null
               ),
             ),
 
             SwitchListTile(
-              title: Text('Filled'),
+              title: const Text('Filled'),
                 value: fill,
                 onChanged: (bool value){
                   setState(() {
@@ -46,7 +46,7 @@ class _TextInputState extends State<TextInput> {
                 }
             ),
             SwitchListTile(
-              title: Text('Outline'),
+              title: const Text('Outline'),
                 value: outlined,
                 onChanged: (bool value){
                   setState(() {
@@ -55,7 +55,7 @@ class _TextInputState extends State<TextInput> {
                 }
             ),
             SwitchListTile(
-              title: Text('Prefix Icon'),
+              title: const Text('Prefix Icon'),
                 value: prefix,
                 onChanged: (bool value){
                   setState(() {
@@ -64,7 +64,7 @@ class _TextInputState extends State<TextInput> {
                 }
             ),
             SwitchListTile(
-              title: Text('Suffix Icon'),
+              title: const Text('Suffix Icon'),
                 value: suffix,
                 onChanged: (bool value){
                   setState(() {
@@ -73,7 +73,7 @@ class _TextInputState extends State<TextInput> {
                 }
             ),
             SwitchListTile(
-              title: Text('Label Text'),
+              title: const Text('Label Text'),
                 value: label,
                 onChanged: (bool value){
                   setState(() {
@@ -82,7 +82,7 @@ class _TextInputState extends State<TextInput> {
                 }
             ),
             SwitchListTile(
-              title: Text('Hint Text'),
+              title: const Text('Hint Text'),
                 value: hint,
                 onChanged: (bool value){
                   setState(() {
@@ -91,7 +91,7 @@ class _TextInputState extends State<TextInput> {
                 }
             ),
             SwitchListTile(
-              title: Text('Helper Text'),
+              title: const Text('Helper Text'),
                 value: helper,
                 onChanged: (bool value){
                   setState(() {
