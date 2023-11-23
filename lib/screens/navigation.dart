@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:m3_widgets/widgets/tabbar.dart';
 import '../widgets/drawer.dart';
 import '../widgets/navigationRail.dart';
 import '../widgets/navigationbar.dart';
@@ -121,6 +122,20 @@ class Navigation extends StatelessWidget {
                 child: const Text('Navigation Drawer Demo'),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationRailDemo()));
+                },
+              ),
+
+
+              const Divider(height: 12),
+              const SizedBox(height: 20),
+
+              // ======================================
+              Text('Tabbar', style: Theme.of(context).textTheme.headlineMedium),
+
+              FilledButton.tonal(
+                child: const Text('Tabbar Demo'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const TabbarDemo()));
                 },
               ),
             ],
