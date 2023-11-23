@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:m3_widgets/screens/selection.dart';
+import 'package:m3_widgets/screens/textInput.dart';
 import '../screens/buttons.dart';
 import '../screens/communication.dart';
 import '../screens/containment.dart';
@@ -11,7 +12,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 6,
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -24,6 +25,7 @@ class Home extends StatelessWidget {
                 Tab(text:'Containment'),
                 Tab(text:'Navigation'),
                 Tab(text:'Selection'),
+                Tab(text:'Text Input'),
               ]
           ),
         ),
@@ -33,7 +35,8 @@ class Home extends StatelessWidget {
             Communication(),
             Containment(),
             Navigation(),
-            Selection()
+            Selection(),
+            TextInput()
           ],
         ),
       ),
