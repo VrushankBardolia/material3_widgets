@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:m3_widgets/drawer.dart';
+import 'package:m3_widgets/navigationRail.dart';
 import 'package:m3_widgets/navigationbar.dart';
 
 class Navigation extends StatelessWidget {
@@ -107,6 +108,19 @@ class Navigation extends StatelessWidget {
                 child: const Text('Navigation Drawer Demo'),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const DrawerDemo()));
+                },
+              ),
+
+              const Divider(height: 12),
+              const SizedBox(height: 20),
+
+              // ======================================
+              Text('Navigation Rail', style: Theme.of(context).textTheme.headlineMedium),
+
+              FilledButton.tonal(
+                child: const Text('Navigation Drawer Demo'),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationRailDemo()));
                 },
               ),
             ],
